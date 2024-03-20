@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About Us{% endblock title %}
+{% block body %}
+<section class="about-us-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>About Our Pharmacy</h1>
+        <h6>At Damak Pharmacy, we are committed to providing our customers with convenient access to affordable and high-quality prescription medications and health products. Our user-friendly online platform allows you to easily order your medications from the comfort of your own home, and our team of experienced pharmacists and customer service representatives is available to answer any questions you may have.</h6>
+        <h6>We understand that managing your health can be stressful, which is why we strive to make the process as easy and stress-free as possible. Our goal is to provide you with the resources you need to take control of your health and well-being.
+        </h6>
+        <br>
+            <img src="{% static 'images/bgg.jpg' %}" alt="Pharmacy" class="img-fluid">
+        <br>
+        <br>
+        <h6>Our online pharmacy offers a wide range of prescription medications, over-the-counter products, vitamins, and supplements, all of which are carefully selected to ensure their safety and effectiveness. We work closely with licensed and reputable pharmaceutical manufacturers to provide you with the best possible products at affordable prices.</h6>
+        <h6>Thank you for choosing Damak Pharmacy as your trusted online pharmacy. We are dedicated to providing you with the highest level of service and care, and we look forward to helping you on your journey to better health.</h6>
+
+
+      </div>
+      <div class="col-md-6">
+        <h2>Our Doctors</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'images/doctor1.jpg' %}" alt="Doctor 1">
+              <div class="card-body">
+                <h4 class="card-title">Dr. Depain Pandey</h4>
+                <p class="card-text">Family Medicine</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'images/doctor2.jpg' %}" alt="Doctor 2">
+              <div class="card-body">
+                <h4 class="card-title">Dr. Jenny Roy</h4>
+                <p class="card-text">Internal Medicine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=Damak Pharmacy&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:510px;width:770px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:510px;width:770px;}</style></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock body %}
